@@ -300,7 +300,7 @@ export const SHEIKHS_DATA: Sheikh[] = [
         day: "الجمعة",
         subject: "تفسير القرآن الكريم",
         location: "جمعية الرحمة",
-        time: "بعد الظهر",
+        time: "بعد العصر",
         type: "public",
         active: true,
         description: "تفسير ميسر لآيات القرآن الكريم",
