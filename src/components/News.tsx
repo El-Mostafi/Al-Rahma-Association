@@ -53,7 +53,7 @@ function News() {
         "محاضرة قيمة عن السيرة النبوية العطرة وأثرها في بناء الشخصية المسلمة",
       date: "1 ربيع الأول 1446",
       image:
-        "https://images.unsplash.com/photo-1585909695284-32d2985ac9c0?w=800&h=600&fit=crop",
+        "https://modo3.com/thumbs/fit630x300/75203/1476812732/%D8%A8%D8%AD%D8%AB_%D8%B9%D9%86_%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A9_%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9.jpg?w=800&h=600&fit=crop",
       category: "محاضرات",
     },
   ];
@@ -132,10 +132,13 @@ function News() {
                     {item.description}
                   </p>
 
-                  <button className="group/btn flex items-center justify-center w-full gap-2 text-[#2D5F3F] font-semibold bg-[#2D5F3F]/5 hover:bg-[#2D5F3F] hover:text-white py-3 rounded-xl transition-all duration-300 border-2 border-[#2D5F3F]/20 hover:border-[#2D5F3F]">
+                  <Link
+                    to={`/news/${item.id}`}
+                    className="group/btn flex items-center justify-center w-full gap-2 text-[#2D5F3F] font-semibold bg-[#2D5F3F]/5 hover:bg-[#2D5F3F] hover:text-white py-3 rounded-xl transition-all duration-300 border-2 border-[#2D5F3F]/20 hover:border-[#2D5F3F]"
+                  >
                     <span>اقرأ المزيد</span>
                     <ArrowLeft className="h-5 w-5 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

@@ -13,7 +13,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-import associationImage5 from "../images/associationImage5.png";
+import associationImage5 from "/src/images/associationImage5.png";
 
 interface Project {
   id: number;
@@ -178,12 +178,15 @@ function Projects() {
                     {project.description}
                   </p>
 
-                  <button className="group/btn flex items-center justify-center w-full gap-2 text-[#2D5F3F] font-semibold bg-[#2D5F3F]/5 hover:bg-[#2D5F3F] hover:text-white py-3 rounded-xl transition-all duration-300 border-2 border-[#2D5F3F]/20 hover:border-[#2D5F3F]">
+                  <Link 
+                    to="/projects"
+                    className="group/btn flex items-center justify-center w-full gap-2 text-[#2D5F3F] font-semibold bg-[#2D5F3F]/5 hover:bg-[#2D5F3F] hover:text-white py-3 rounded-xl transition-all duration-300 border-2 border-[#2D5F3F]/20 hover:border-[#2D5F3F]"
+                  >
                     <span>المزيد من التفاصيل</span>
                     <span className="group-hover/btn:-translate-x-1 transition-transform inline-block">
                       ←
                     </span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
