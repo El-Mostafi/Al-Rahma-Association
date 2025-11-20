@@ -144,7 +144,7 @@ function Projects() {
             1024: { slidesPerView: 3 },
             1280: { slidesPerView: 4 },
           }}
-          className="!pb-16 max-w-7xl"
+          className="!pb-16 "
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id}>

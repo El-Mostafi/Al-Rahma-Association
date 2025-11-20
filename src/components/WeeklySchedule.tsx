@@ -40,7 +40,7 @@ function WeeklySchedule() {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="mx-auto">
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={30}
