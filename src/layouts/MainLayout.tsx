@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -8,6 +9,12 @@ import Footer from "../components/Footer";
  * Outlet: مكان عرض محتوى الصفحة الحالية
  */
 function MainLayout() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="min-h-screen bg-[#FAF8F3]" dir="rtl">
       <Header />
