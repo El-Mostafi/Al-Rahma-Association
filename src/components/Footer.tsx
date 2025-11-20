@@ -151,7 +151,6 @@ function Footer() {
                 className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#C9A961] transition-colors text-sm md:text-base"
               />
               <button
-                type="submit"
                 className="w-full bg-gradient-to-r from-[#C9A961] to-[#D4AF37] hover:from-[#B89850] hover:to-[#C9A961] text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm md:text-base"
               >
                 اشترك الآن
