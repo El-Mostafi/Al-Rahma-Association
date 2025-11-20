@@ -24,6 +24,13 @@ import "swiper/css/effect-coverflow";
 import { SHEIKHS_DATA } from "../data/sheikhs";
 import { NEWS_DATA } from "../data/news";
 import heroImage from "../images/associationImage1.jpg";
+import galleryImage1 from "../images/associationImage1.jpg";
+import galleryImage2 from "../images/associationImage2.jpg";
+import galleryImage3 from "../images/associationImage3.jpg";
+import galleryImage4 from "../images/associationImage4.jpg";
+import galleryImage6 from "../images/associationImage6.jpg";
+import galleryImage7 from "../images/associationImage7.jpg";
+import galleryImage8 from "../images/associationImage8.jpg";
 
 /**
  * صفحة من نحن - معلومات شاملة عن جمعية الرحمة
@@ -110,43 +117,43 @@ function AboutPage() {
   const galleryImages = [
     {
       id: 1,
-      url: "/src/images/associationImage1.jpg",
+      url: galleryImage1,
       title: "قاعة المحاضرات الرئيسية",
       description: "مساحة واسعة لاستضافة الدروس والمحاضرات العلمية",
     },
     {
       id: 2,
-      url: "/src/images/associationImage2.jpg",
+      url: galleryImage2,
       title: "ورشة العمل التفاعلية",
       description: "بيئة تعليمية حديثة للدورات والبرامج التدريبية",
     },
     {
       id: 3,
-      url: "/src/images/associationImage3.jpg",
+      url: galleryImage3,
       title: "حلقات التحفيظ",
       description: "قاعات مخصصة لتحفيظ القرآن الكريم وتعليم التجويد",
     },
     {
       id: 4,
-      url: "/src/images/associationImage4.jpg",
+      url: galleryImage4,
       title: "المكتبة الإسلامية",
       description: "مكتبة غنية بالكتب والمراجع الإسلامية",
     },
     {
       id: 5,
-      url: "/src/images/associationImage6.jpg",
+      url: galleryImage6,
       title: "مشاريعنا الإنسانية",
       description: "صور من مشاريعنا الخيرية وأعمالنا الإغاثية",
     },
     {
       id: 6,
-      url: "/src/images/associationImage7.jpg",
+      url: galleryImage7,
       title: "فريق العمل والمتطوعين",
       description: "طاقم متميز من المتطوعين المخلصين",
     },
     {
       id: 7,
-      url: "/src/images/associationImage8.jpg",
+      url: galleryImage8,
       title: "برامجنا التعليمية",
       description: "لقطات من البرامج التعليمية والتربوية المتنوعة",
     },

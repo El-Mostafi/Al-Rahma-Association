@@ -13,6 +13,7 @@ import {
   Award,
   ChevronDown,
 } from "lucide-react";
+import associationImage5 from "../images/associationImage5.png";
 
 interface Project {
   id: number;
@@ -133,7 +134,7 @@ function ProjectsPage() {
       fullDescription:
         "دورات علمية مكثفة في مختلف العلوم الشرعية يقدمها نخبة من الدعاة والمشايخ المتخصصين. تشمل دورات في التفسير، الحديث، الفقه، العقيدة، والسيرة النبوية بمستويات مختلفة من المبتدئ إلى المتقدم.",
       icon: "lightbulb",
-      image: "/src/images/associationImage5.png",
+      image: associationImage5,
       stats: "+40 دورة",
       achievements: [
         "تنظيم 40+ دورة علمية متخصصة",

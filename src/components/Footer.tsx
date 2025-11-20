@@ -1,5 +1,6 @@
 import { Facebook, Youtube, Mail, Phone, MapPin, Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import associationLogo from "../images/association_logo.png";
 
 function Footer() {
   return (
@@ -12,7 +13,7 @@ function Footer() {
             <div className="flex items-center gap-3 mb-4 md:mb-6">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                 <img
-                  src="src/images/association_logo.png"
+                  src={associationLogo}
                   alt="جمعية الرحمة"
                   className="w-full h-full object-contain"
                 />

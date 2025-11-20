@@ -13,6 +13,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import associationImage5 from "../images/associationImage5.png";
 
 interface Project {
   id: number;
@@ -66,7 +67,7 @@ function Projects() {
       title: "الدورات العلمية",
       description: "دورات علمية متخصصة في العلوم الشرعية",
       icon: "lightbulb",
-      image: "/src/images/associationImage5.png",
+      image: associationImage5,
       stats: "+40 دورة",
     },
     {

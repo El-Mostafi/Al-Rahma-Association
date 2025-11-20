@@ -2,6 +2,7 @@ import { Facebook, Youtube, Heart, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { NAV_LINKS } from "../constants";
 import { useState } from "react";
+import associationLogo from "../images/association_logo.png";
 
 function Header() {
   const location = useLocation();
@@ -80,7 +81,7 @@ function Header() {
             </div>
             <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center flex-shrink-0">
               <img
-                src="src/images/association_logo.png"
+                src={associationLogo}
                 alt="جمعية الرحمة"
                 className="w-full h-full object-contain"
               />
