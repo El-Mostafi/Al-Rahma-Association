@@ -23,14 +23,14 @@ function Header() {
             </Link>
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://web.facebook.com/moussa.dkhaila"
                 className="text-[#4A5C3A] hover:text-[#C9A961] transition-colors"
                 aria-label="فيسبوك"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@moussadkhilla"
                 className="text-[#4A5C3A] hover:text-[#C9A961] transition-colors"
                 aria-label="يوتيوب"
               >
@@ -121,14 +121,14 @@ function Header() {
 
                 <div className="flex items-center justify-center gap-4 pt-2">
                   <a
-                    href="#"
+                    href="https://web.facebook.com/moussa.dkhaila"
                     className="text-[#4A5C3A] hover:text-[#C9A961] transition-colors"
                     aria-label="فيسبوك"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@moussadkhilla"
                     className="text-[#4A5C3A] hover:text-[#C9A961] transition-colors"
                     aria-label="يوتيوب"
                   >

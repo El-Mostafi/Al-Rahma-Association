@@ -1,5 +1,6 @@
 import { ArrowLeft } from 'lucide-react';
 import chaikWideImg from "../images/chaikh_wide_image.jpg"
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -33,13 +34,13 @@ function Hero() {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-white text-[#4A5C3A] px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 group">
-              اكتشف برامجنا
+            <Link to="/projects" className="bg-white text-[#4A5C3A] px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 group">
+              اكتشف مشاريعنا
               <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3.5 rounded-lg font-bold hover:bg-white hover:text-[#4A5C3A] transition-all duration-300">
+            </Link >
+            <Link to="/schedule" className="border-2 border-white text-white px-8 py-3.5 rounded-lg font-bold hover:bg-white hover:text-[#4A5C3A] transition-all duration-300">
               تابع آخر الدروس
-            </button>
+            </Link >
           </div>
         </div>
       </div>

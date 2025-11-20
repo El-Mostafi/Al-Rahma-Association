@@ -20,8 +20,8 @@ export const SHEIKHS_DATA: Sheikh[] = [
       "التفسير",
     ],
     socialMedia: {
-      facebook: "#",
-      youtube: "#",
+      facebook: "https://www.facebook.com/moussa.dkhaila",
+      youtube: "https://www.youtube.com/@moussadkhilla",
     },
     achievements: [
       "تأسيس جمعية الرحمة للتربية والتنمية",

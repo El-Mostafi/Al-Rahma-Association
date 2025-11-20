@@ -31,14 +31,14 @@ function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://web.facebook.com/moussa.dkhaila"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C9A961] flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="فيسبوك"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@moussadkhilla"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C9A961] flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="يوتيوب"
               >
