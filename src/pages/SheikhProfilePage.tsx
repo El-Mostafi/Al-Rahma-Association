@@ -15,6 +15,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Image5 from "../images/associationImage5.png";
+
 
 /**
  * صفحة البروفايل الشخصي للشيخ
@@ -217,9 +219,6 @@ function SheikhProfilePage() {
                           {/* Top Ornament Line */}
                           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#C9A961] via-[#D4AF37] to-[#C9A961] shadow-sm" />
 
-                          {/* Decorative Corner Frames */}
-                          <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-[#C9A961]/80 rounded-tr-2xl" />
-                          <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-[#C9A961]/80 rounded-bl-2xl" />
 
                           {/* Day Badge */}
                           <div className="absolute top-6 left-6 z-10">
@@ -321,7 +320,7 @@ function SheikhProfilePage() {
                 autoplay={{ delay: 5500, disableOnInteraction: false }}
                 className="private-lessons-swiper pb-12"
               >
-                {privateLessons.map((lesson, index) => (
+                {privateLessons.map((lesson) => (
                   <SwiperSlide key={lesson.id}>
                     <div className="group relative h-full">
                       {/* Main Card */}
@@ -330,9 +329,7 @@ function SheikhProfilePage() {
                         <div className="relative h-48 overflow-hidden">
                           {/* Background Image */}
                           <img
-                            src={`https://images.unsplash.com/photo-1584286595398-a59511e0649f?w=600&h=400&fit=crop&q=80&seed=${
-                              index + 100
-                            }`}
+                            src={Image5}
                             alt={lesson.subject}
                             className="absolute inset-0 w-full h-full object-cover"
                           />
@@ -344,8 +341,6 @@ function SheikhProfilePage() {
                           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#C9A961] via-[#D4AF37] to-[#C9A961] shadow-sm" />
 
                           {/* Decorative Corner Frames */}
-                          <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-[#C9A961]/80 rounded-tr-2xl" />
-                          <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-[#C9A961]/80 rounded-bl-2xl" />
 
                           {/* Day Badge */}
                           <div className="absolute top-6 left-6 z-10">
@@ -456,25 +451,16 @@ function SheikhProfilePage() {
                         <div className="relative h-56 overflow-hidden bg-gradient-to-br from-[#8B4513] to-[#6D3410]">
                           {/* Background Image */}
                           <img
-                            src={`https://images.unsplash.com/photo-1585779034823-7e9ac8faec70?w=400&h=600&fit=crop&q=80&seed=${
-                              index + 200
-                            }`}
+                            src={`http://taaseel.com/gallery/prog/11.jpg`}
                             alt={book.title}
-                            className="absolute inset-0 w-full h-full object-cover opacity-30"
+                            className="absolute inset-0 w-full h-full object-cover"
                           />
 
-                          {/* Gradient Overlay */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-[#8B4513]/60 to-[#6D3410]/80" />
-
-                          {/* Book Spine Decoration */}
-                          <div className="absolute left-0 top-0 bottom-0 w-2.5 bg-gradient-to-b from-[#C9A961] via-[#D4AF37] to-[#C9A961] shadow-lg" />
 
                           {/* Top Gold Line */}
                           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#C9A961] via-[#D4AF37] to-[#C9A961]" />
 
                           {/* Decorative Corners */}
-                          <div className="absolute top-3 right-3 w-12 h-12 border-t-2 border-r-2 border-[#C9A961]/70 rounded-tr-lg" />
-                          <div className="absolute top-3 left-5 w-12 h-12 border-t-2 border-l-2 border-[#C9A961]/70 rounded-tl-lg" />
 
                           {/* Category Badge */}
                           <div className="absolute top-4 right-4 z-10">
@@ -485,15 +471,7 @@ function SheikhProfilePage() {
                             </div>
                           </div>
 
-                          {/* Islamic Ornament Icon */}
-                          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                            <div className="relative">
-                              <div className="absolute inset-0 bg-[#C9A961]/40 rounded-full blur-xl" />
-                              <div className="relative w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border-2 border-[#C9A961]/60 flex items-center justify-center shadow-xl">
-                                <BookOpen className="w-8 h-8 text-white drop-shadow-lg" />
-                              </div>
-                            </div>
-                          </div>
+                          
                         </div>
 
                         {/* Content Section with Flexible Height */}
