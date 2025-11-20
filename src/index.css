@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Tajawal", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Amiri", serif;
+  }
+}
+
+@layer utilities {
+  .islamic-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234A5C3A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+/* Swiper Custom Styles for Sheikh Profile - Expert Level */
+
+/* Hide navigation buttons */
+.public-lessons-swiper .swiper-button-next,
+.public-lessons-swiper .swiper-button-prev,
+.private-lessons-swiper .swiper-button-next,
+.private-lessons-swiper .swiper-button-prev,
+.books-swiper .swiper-button-next,
+.books-swiper .swiper-button-prev {
+  display: none;
+}
+
+/* Modern Pagination Bullets */
+.public-lessons-swiper .swiper-pagination-bullet,
+.private-lessons-swiper .swiper-pagination-bullet,
+.books-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e1;
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+
+.public-lessons-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #16a34a 0%, #059669 100%);
+  width: 32px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.3);
+}
+
+.private-lessons-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  width: 32px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+.books-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #8b4513 0%, #6d3410 100%);
+  width: 32px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
+}
+
+/* Smooth pagination spacing */
+.public-lessons-swiper .swiper-pagination,
+.private-lessons-swiper .swiper-pagination,
+.books-swiper .swiper-pagination {
+  bottom: 0 !important;
+  padding-top: 16px;
+}
+
+.public-lessons-swiper .swiper-pagination-bullet,
+.private-lessons-swiper .swiper-pagination-bullet,
+.books-swiper .swiper-pagination-bullet {
+  margin: 0 6px !important;
+}
+
+/* Book title text shadow */
+.book-title {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery Swiper Custom Styles */
+.gallery-swiper-desktop {
+  overflow: hidden !important;
+  max-width: 100%;
+}
+
+.gallery-swiper-desktop .swiper-wrapper {
+  padding: 0 10px;
+}
+
+.gallery-swiper-desktop .swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.gallery-swiper-desktop .swiper-slide-active {
+  z-index: 2;
+}
+
+.gallery-swiper-desktop .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-swiper-desktop .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #2d5f3f 0%, #c9a961 100%);
+  width: 32px;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px rgba(45, 95, 63, 0.4);
+}
+
+.gallery-swiper-desktop .swiper-3d .swiper-slide-shadow-left,
+.gallery-swiper-desktop .swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* Mobile Gallery Swiper */
+.gallery-swiper-mobile .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e1;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.gallery-swiper-mobile .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #2d5f3f 0%, #c9a961 100%);
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(45, 95, 63, 0.3);
+}
+
+/* Sheikhs, Projects, News Swipers */
+.sheikhs-swiper .swiper-pagination-bullet,
+.projects-swiper .swiper-pagination-bullet,
+.news-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e1;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.sheikhs-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #2d5f3f 0%, #1a4d2e 100%);
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(45, 95, 63, 0.3);
+}
+
+.projects-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #8b4513 0%, #6d3410 100%);
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
+}
+
+.news-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #2d5f3f 0%, #c9a961 100%);
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(45, 95, 63, 0.3);
+}
