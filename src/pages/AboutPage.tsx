@@ -453,12 +453,12 @@ function AboutPage() {
                                 جمعية الرحمة
                               </span>
                             </div>
-                            <h3 className="text-3xl font-bold text-white mb-2">
+                            {/*<h3 className="text-3xl font-bold text-white mb-2">
                               {image.title}
                             </h3>
                             <p className="text-white/90 text-lg leading-relaxed">
                               {image.description}
-                            </p>
+                            </p>*/}
                           </div>
                         </div>
                       </div>
